@@ -1,0 +1,20 @@
+{
+  "name": "API-News-Page",
+  "version": "1.0.0",
+  "description": "- News API: https://newsapi.org/docs\r - Weather API: https://openweathermap.org/api\r - Mockup: https://www.figma.com/file/GCrMSeZMoPJQnf38BP0A4Rbm/Apka-React-1-NightCoders?node-id=0%3A1&redirected=1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adriwin/API-News-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adriwin/API-News-Page/issues"
+  },
+  "homepage": "https://github.com/Adriwin/API-News-Page#readme"
+}
