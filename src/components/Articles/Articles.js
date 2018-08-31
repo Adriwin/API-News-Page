@@ -3,8 +3,6 @@ import List from "../List/List";
 
 class Articles extends Component { 
 
-
-
   render() {
 
     const{articles} = this.props;
