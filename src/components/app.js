@@ -12,7 +12,7 @@ class App extends Component {
       super(props);
         this.state = {
             articlesArr:[],
-            articles:'',
+            articles:[]
         }
   }
   componentDidMount() {
@@ -24,12 +24,12 @@ class App extends Component {
           articles:json.articles
       }));
   }
-  
+
   handleSearch = (event) =>{
     const searchQuery = event.target.value.toLowerCase();
     this.setState({
-      articlesArr:this.state.articles.filter(function(gora) {
-      const searchValue = gora.title.toLowerCase();
+      articlesArr:this.state.articles.filter(function(a) {
+      const searchValue = a.title.toLowerCase();
       return searchValue.indexOf(searchQuery) !== -1;
     })
     })
@@ -38,8 +38,8 @@ class App extends Component {
     console.log(this.state.articles)
     return (
       <div>
-        <input type="text" id="name" onChange={this.handleSearch}/>
-      	<Articles articles={this.state.articlesArr} />
+        <input type="text" id="title" onChange={this.handleSearch}/>
+      	   <Articles articles={this.state.articlesArr} />
       </div>
     );
   }
