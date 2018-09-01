@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+
+
 import Articles from './Articles/Articles';
 
 
+
 const config = {
-  url :'https://newsapi.org/v1/articles?source=the-verge&',
+  url :'https://newsapi.org/v2/top-headlines?country=us&',
   apiKey :"59b95200a2da4aa5991a90f431f28f2f"
 }
 class App extends Component {
@@ -37,13 +40,36 @@ class App extends Component {
   render() {
     console.log(this.state.articles)
     return (
-      <div>
-        <input type="text" id="title" onChange={this.handleSearch}/>
-      	   <Articles articles={this.state.articlesArr} />
+      <div style={pStyle}>
+        <header style={headerStye}>
+            <input style={inputStyles} type="text" id="title" onChange={this.handleSearch}/>
+        </header>
+        <main style={mainBox}>
+      	    <Articles articles={this.state.articlesArr} />
+            <aside>xxx</aside>
+        </main>
+
       </div>
     );
   }
 }
+const pStyle = {
+  fontSize: '15px',
+  textAlign: 'center',
+  background: '#180729',
+  color: 'white',
+  paddingTop: '10px',
+
+};
+const mainBox  = {
+  padding:'5%',
+};
+const headerStye = {
+  backgroundColor: 'rgba(255, 255, 255, 0.55)',
+}
+const inputStyles = {
+  color:'black'
+};
 
 
 export default App;

@@ -8,7 +8,7 @@ class Articles extends Component {
     const{articles} = this.props;
  
     return (
-        <section>
+        <div>
           {articles.map(list =>
           <List key={list.id}
                 title={list.title}
@@ -17,7 +17,7 @@ class Articles extends Component {
                 author={list.author}
                 urlToImage={list.urlToImage} />
             )}
-        </section>
+        </div>
     )
   }
 }
