@@ -1,0 +1,11 @@
+.linker
+{
+    color:white;
+}
+.linker:hover
+{
+    color:#999999;
+    text-shadow: 1px 1px #777777;
+    text-decoration:none;
+}
+

@@ -9,11 +9,11 @@ class List extends Component {
       	<ul style={listBox}>
 	      	<li key={key} style={listChild}>
             <div>
-              <Img style={listImage} src={urlToImage} alt="wind arrow" />
+              <a href={url} target="_blank"><Img style={listImage} src={urlToImage} alt="wind arrow" /></a>
             </div>
             <div> 
-              <h3>{title}</h3>
-              <p>{url}</p>
+              <a className="linker" href={url} target="_blank"><h3>{title}</h3></a>
+              <a className="linker" href={url} target="_blank"><p>{url}</p></a>
               <p>Author:{author}</p>
               <p>{publishedAt}</p>
             </div>
