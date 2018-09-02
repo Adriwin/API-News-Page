@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Img from 'react-image';
 
 class List extends Component {
+
+  filter(text){
+    this.setState({ title: text });
+  }
+
   render() {
     const{title,publishedAt,url,author,urlToImage,key} = this.props
     return (
